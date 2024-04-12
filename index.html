@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+ let name1 = "yossi"
+ let name2 = "shalom"
+ let name3 = "sharon"
+ let isStudent = true
+ let isntStudent = false
+ console.log(`my name is ${name1} and i am a student ${isStudent}`)
+ console.log(`my name is ${name2} and i am not a student ${isntStudent}`)
+ console.log(`my name is ${name3} and i am a student ${isntStudent}`)
+ let a = 50
+ let b = 30
+ let c = a*b
+ console.log(`my height is ${a} and my width ${b} and my area is ${a*b}`)
+ console.log(`${a*b}`)
+ console.log(`${c}`)
+   //practice 1
+let obj ="one one"
+let obj2 ="two two"
+let obj3 ="three three"
+console.log(obj.length)
+console.log(obj2.length)
+console.log(obj3.length)
+  //practice 2+3
+console.log(obj.toLowerCase())
+console.log(obj.toUpperCase())
+console.log(obj.charAt(0))
+console.log(obj.charAt(2))
+console.log(obj2.toLowerCase())
+console.log(obj2.toUpperCase())
+console.log(obj2.charAt(0))
+console.log(obj2.charAt(2))
+console.log(obj3.toLowerCase())
+console.log(obj3.toUpperCase())
+console.log(obj3.charAt(0))
+console.log(obj3.charAt(4))
+  //practice 4
+console.log(obj.endsWith())
+console.log(obj2.trim())
+console.log(obj3.includes())
+  //practice 5
+function reverseSentence(sentence) {
+    let words = sentence.split(' ');
+    let reversedWords = words.reverse();
+    let reversedSentence = reversedWords.join(' ');
+    return reversedSentence;
+}
+    const inputSentence = "My Name is Tal";
+const reversed = reverseSentence(inputSentence);
+console.log(reversed);
+  //practice 6
+const str = "My Name is Tal";
+const thirdAndFifthLetters = str.substring(3, 5);
+console.log(thirdAndFifthLetters);
+
+
+  // CLASS PRACTICE 
+let myStr = 'Hello Talos'
+console.log(myStr.charAt(0))
+console.log(myStr.charAt(myStr.length-1))
+       // Another way
+console.log(myStr.at(-1))
+  // REVERSE Sentence
+let sentence = 'my name is talos'
+let words = sentence.split(' ')
+let reversedWords = words.reverse()
+console.log(reversedWords.join(' '))
+  // IF
+let number = '55'
+ if (number > 0 && number < 100){
+    console.log('positive')
+ }
+
+ // Practice 7
+ let age = 67
+ if (age < 18){
+    console.log('you are a kid')
+ }
+ else if(age > 19 && age < 65){
+  console.log('you are an adult')
+ }
+ else if(age > 65){
+ console.log('you are a senior citizen')
+ }
+// Practice 8
+let num = 24; // Change this to any number you want to test
+
+if (num % 3 === 0 || num % 4 === 0) {
+    console.log(`${num} can be divided by 3 or 4`)
+} else {
+    console.log(`${num} cannot be divided by 3 or 4`)
+}
+
+
+</script>
+</body>
+</html>
