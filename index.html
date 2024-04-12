@@ -80,20 +80,23 @@ let number = '55'
 
  // Practice 7
  let age = 67
- if (age < 18){
+ let livingLocation = 'north'
+ if (age < 18 && livingLocation === 'north') {
     console.log('you are a kid')
+    console.log('no comment1')
  }
- else if(age > 19 && age < 65){
+ else if(age > 19 && age < 65 && livingLocation === 'middle') {
   console.log('you are an adult')
  }
- else if(age > 65){
+ else if(age > 65 && livingLocation === 'middle') {
  console.log('you are a senior citizen')
  }
+console.log('no comment')
 // Practice 8
 let num = 24; // Change this to any number you want to test
 
 if (num % 3 === 0 || num % 4 === 0) {
-    console.log(`${num} can be divided by 3 or 4`)
+    console.log(`${num} number is divicible by 3 or 4`)
 } else {
     console.log(`${num} cannot be divided by 3 or 4`)
 }
