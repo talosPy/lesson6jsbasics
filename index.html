@@ -103,6 +103,42 @@ if (num % 3 === 0 || num % 4 === 0) {
     console.log(`${num} cannot be divided by 3 or 4`)
 }
 
+// HOMEWORK 1
+function checkStringLength(inputString) {
+    return inputString.length > 5;
+}
+
+// Test the function
+console.log(checkStringLength("Helloworld"));       // Output: false
+console.log(checkStringLength("JS"));  // Output: true
+
+//HOMEWORK 2
+function checkNumber(num) {
+    if (isNaN(num)) {
+        return "Invalid input";
+    } else if (num % 2 === 0) {
+        return "Even";
+    } else {
+        return "Odd";
+    }
+}
+
+// Example usage
+console.log(checkNumber(6));  // Output: "Even"
+console.log(checkNumber(9));  // Output: "Odd"
+console.log(checkNumber("Talos"));  // Output: "Invalid input"
+
+// HOMEWORK 3
+function bothTrue(value1, value2) {
+    return value1 && value2;
+}
+
+// Example usage
+console.log(bothTrue(true, true));   // Output: true
+console.log(bothTrue(true, false));  // Output: false
+console.log(bothTrue(false, true));  // Output: false
+console.log(bothTrue(false, false)); // Output: false
+
 </script>
 </body>
 </html>
